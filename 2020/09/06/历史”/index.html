@@ -1,317 +1,37 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
+{% extends '_layout.swig' %}
+{% import '_macro/post.swig' as post_template %}
+{% import '_macro/sidebar.swig' as sidebar_template %}
 
-  
-  <title>历史” | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="中国古代史一、原始社会1、原始人群2、氏族公社二、奴隶社会1、夏朝2、商朝3、西周 分封制和宗法制 礼乐制 井田制 共和元年  4、春秋时期 春秋五霸 吴越争霸 城濮之战  三、封建社会的确立和初步发展–战国秦汉1、战国时期 战国七雄 商鞅变法 长平之战  2、封建统一国家的建立–秦朝 焚书坑儒 陈胜吴广起义 秦朝灭亡 巨鹿之战-成稿之战 秦始皇陵和兵马俑  3、强盛的汉王朝1、西汉 文景之治 推">
-<meta property="og:type" content="article">
-<meta property="og:title" content="历史”">
-<meta property="og:url" content="http://example.com/2020/09/06/%E5%8E%86%E5%8F%B2%E2%80%9D/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="中国古代史一、原始社会1、原始人群2、氏族公社二、奴隶社会1、夏朝2、商朝3、西周 分封制和宗法制 礼乐制 井田制 共和元年  4、春秋时期 春秋五霸 吴越争霸 城濮之战  三、封建社会的确立和初步发展–战国秦汉1、战国时期 战国七雄 商鞅变法 长平之战  2、封建统一国家的建立–秦朝 焚书坑儒 陈胜吴广起义 秦朝灭亡 巨鹿之战-成稿之战 秦始皇陵和兵马俑  3、强盛的汉王朝1、西汉 文景之治 推">
-<meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-09-06T07:53:02.000Z">
-<meta property="article:modified_time" content="2020-09-06T07:53:28.145Z">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.1.1"></head>
+{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-历史”" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/09/06/%E5%8E%86%E5%8F%B2%E2%80%9D/" class="article-date">
-  <time datetime="2020-09-06T07:53:02.000Z" itemprop="datePublished">2020-09-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      历史”
-    </h1>
-  
+{% block page_class %}page-post-detail{% endblock %}
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="中国古代史"><a href="#中国古代史" class="headerlink" title="中国古代史"></a>中国古代史</h1><h2 id="一、原始社会"><a href="#一、原始社会" class="headerlink" title="一、原始社会"></a>一、原始社会</h2><h3 id="1、原始人群"><a href="#1、原始人群" class="headerlink" title="1、原始人群"></a>1、原始人群</h3><h3 id="2、氏族公社"><a href="#2、氏族公社" class="headerlink" title="2、氏族公社"></a>2、氏族公社</h3><h2 id="二、奴隶社会"><a href="#二、奴隶社会" class="headerlink" title="二、奴隶社会"></a>二、奴隶社会</h2><h3 id="1、夏朝"><a href="#1、夏朝" class="headerlink" title="1、夏朝"></a>1、夏朝</h3><h3 id="2、商朝"><a href="#2、商朝" class="headerlink" title="2、商朝"></a>2、商朝</h3><h3 id="3、西周"><a href="#3、西周" class="headerlink" title="3、西周"></a>3、西周</h3><ol>
-<li>分封制和宗法制</li>
-<li>礼乐制</li>
-<li>井田制</li>
-<li>共和元年</li>
-</ol>
-<h3 id="4、春秋时期"><a href="#4、春秋时期" class="headerlink" title="4、春秋时期"></a>4、春秋时期</h3><ol>
-<li>春秋五霸</li>
-<li>吴越争霸</li>
-<li>城濮之战</li>
-</ol>
-<h2 id="三、封建社会的确立和初步发展–战国秦汉"><a href="#三、封建社会的确立和初步发展–战国秦汉" class="headerlink" title="三、封建社会的确立和初步发展–战国秦汉"></a>三、封建社会的确立和初步发展–战国秦汉</h2><h2 id="1、战国时期"><a href="#1、战国时期" class="headerlink" title="1、战国时期"></a>1、战国时期</h2><ol>
-<li>战国七雄</li>
-<li>商鞅变法</li>
-<li>长平之战</li>
-</ol>
-<h2 id="2、封建统一国家的建立–秦朝"><a href="#2、封建统一国家的建立–秦朝" class="headerlink" title="2、封建统一国家的建立–秦朝"></a>2、封建统一国家的建立–秦朝</h2><ol>
-<li>焚书坑儒</li>
-<li>陈胜吴广起义</li>
-<li>秦朝灭亡</li>
-<li>巨鹿之战-成稿之战</li>
-<li>秦始皇陵和兵马俑</li>
-</ol>
-<h2 id="3、强盛的汉王朝"><a href="#3、强盛的汉王朝" class="headerlink" title="3、强盛的汉王朝"></a>3、强盛的汉王朝</h2><h3 id="1、西汉"><a href="#1、西汉" class="headerlink" title="1、西汉"></a>1、西汉</h3><ol>
-<li>文景之治</li>
-<li>推恩令</li>
-<li>罢黜百家独尊儒术</li>
-<li>察举制</li>
-<li>张謇出使西域</li>
-</ol>
-<h3 id="2、东汉"><a href="#2、东汉" class="headerlink" title="2、东汉"></a>2、东汉</h3><ol>
-<li>光武中兴</li>
-<li>水排（杜诗）</li>
-<li>黄金起义</li>
-</ol>
-<h2 id="四、封建国家的分裂和民族大融合-三国两晋南北朝"><a href="#四、封建国家的分裂和民族大融合-三国两晋南北朝" class="headerlink" title="四、封建国家的分裂和民族大融合-三国两晋南北朝"></a>四、封建国家的分裂和民族大融合-三国两晋南北朝</h2><h3 id="1、三国鼎立"><a href="#1、三国鼎立" class="headerlink" title="1、三国鼎立"></a>1、三国鼎立</h3><ol>
-<li>官渡之战</li>
-<li>赤壁之战</li>
-<li>夷陵之战</li>
-</ol>
-<h3 id="2、两晋时期"><a href="#2、两晋时期" class="headerlink" title="2、两晋时期"></a>2、两晋时期</h3><ol>
-<li><p>西晋</p>
-<p>八王之乱-五胡十六国时期</p>
-</li>
-<li><p>东晋</p>
-</li>
-</ol>
-<h3 id="3、南北朝时期"><a href="#3、南北朝时期" class="headerlink" title="3、南北朝时期"></a>3、南北朝时期</h3><ol>
-<li>北魏孝文帝改革</li>
-<li>六朝</li>
-</ol>
-<h2 id="五、封建社会的繁荣-隋唐"><a href="#五、封建社会的繁荣-隋唐" class="headerlink" title="五、封建社会的繁荣-隋唐"></a>五、封建社会的繁荣-隋唐</h2><h3 id="1、隋朝"><a href="#1、隋朝" class="headerlink" title="1、隋朝"></a>1、隋朝</h3><ol>
-<li>三省六部制</li>
-<li>隋朝大运河</li>
-</ol>
-<h2 id="2、唐朝"><a href="#2、唐朝" class="headerlink" title="2、唐朝"></a>2、唐朝</h2><ol>
-<li>玄武门之变</li>
-<li>贞观之治</li>
-<li>武则天称帝</li>
-<li>开元盛世</li>
-<li>天宝危机</li>
-<li>安史之乱</li>
-<li>黄巢起义</li>
-</ol>
-<h2 id="六、民族融合的进一步加强和封建经济的继续发展-五代辽宋夏金元"><a href="#六、民族融合的进一步加强和封建经济的继续发展-五代辽宋夏金元" class="headerlink" title="六、民族融合的进一步加强和封建经济的继续发展-五代辽宋夏金元"></a>六、民族融合的进一步加强和封建经济的继续发展-五代辽宋夏金元</h2><h3 id="1、五代十国时期"><a href="#1、五代十国时期" class="headerlink" title="1、五代十国时期"></a>1、五代十国时期</h3><h3 id="2、北宋"><a href="#2、北宋" class="headerlink" title="2、北宋"></a>2、北宋</h3><h3 id="3、南宋"><a href="#3、南宋" class="headerlink" title="3、南宋"></a>3、南宋</h3><h3 id="4、元朝"><a href="#4、元朝" class="headerlink" title="4、元朝"></a>4、元朝</h3><ol>
-<li>统一全国</li>
-<li>行省制</li>
-<li>宣政院</li>
-</ol>
-<h2 id="七、统一的多民族国家的巩固和封建制度的逐渐衰落–明清"><a href="#七、统一的多民族国家的巩固和封建制度的逐渐衰落–明清" class="headerlink" title="七、统一的多民族国家的巩固和封建制度的逐渐衰落–明清"></a>七、统一的多民族国家的巩固和封建制度的逐渐衰落–明清</h2><h2 id="1、明朝"><a href="#1、明朝" class="headerlink" title="1、明朝"></a>1、明朝</h2><ol>
-<li>三司</li>
-<li>靖难之役</li>
-<li>迁都南京</li>
-<li>郑和下西洋</li>
-<li>张居正改革</li>
-<li>后金建立</li>
-<li>郑成功收复台湾</li>
-<li>农民起义</li>
-</ol>
-<h2 id="2、清朝"><a href="#2、清朝" class="headerlink" title="2、清朝"></a>2、清朝</h2><ol>
-<li>三藩之乱</li>
-<li>雅克萨之战</li>
-<li>大小和卓叛乱</li>
-</ol>
-<h1 id="中国近现代史"><a href="#中国近现代史" class="headerlink" title="中国近现代史"></a>中国近现代史</h1><h2 id="1、从鸦片战争到五四运动前"><a href="#1、从鸦片战争到五四运动前" class="headerlink" title="1、从鸦片战争到五四运动前"></a>1、从鸦片战争到五四运动前</h2><h3 id="第一次鸦片战争"><a href="#第一次鸦片战争" class="headerlink" title="第一次鸦片战争"></a>第一次鸦片战争</h3><h3 id="太平天国运动"><a href="#太平天国运动" class="headerlink" title="太平天国运动"></a>太平天国运动</h3><h3 id="洋务运动"><a href="#洋务运动" class="headerlink" title="洋务运动"></a>洋务运动</h3><h3 id="甲午中日战争"><a href="#甲午中日战争" class="headerlink" title="甲午中日战争"></a>甲午中日战争</h3><h3 id="戊戌变法"><a href="#戊戌变法" class="headerlink" title="戊戌变法"></a>戊戌变法</h3><h3 id="八国联军侵华战争和辛丑条约"><a href="#八国联军侵华战争和辛丑条约" class="headerlink" title="八国联军侵华战争和辛丑条约"></a>八国联军侵华战争和辛丑条约</h3><h3 id="辛亥革命"><a href="#辛亥革命" class="headerlink" title="辛亥革命"></a>辛亥革命</h3><h3 id="新文化运动"><a href="#新文化运动" class="headerlink" title="新文化运动"></a>新文化运动</h3><h2 id="2、五四运动–中华人民共和国成立"><a href="#2、五四运动–中华人民共和国成立" class="headerlink" title="2、五四运动–中华人民共和国成立"></a>2、五四运动–中华人民共和国成立</h2><h3 id="五四运动"><a href="#五四运动" class="headerlink" title="五四运动"></a>五四运动</h3><h3 id="中国共产党的诞生"><a href="#中国共产党的诞生" class="headerlink" title="中国共产党的诞生"></a>中国共产党的诞生</h3><h3 id="第一次国内革命战争"><a href="#第一次国内革命战争" class="headerlink" title="第一次国内革命战争"></a>第一次国内革命战争</h3><h3 id="第二次国内革命战争"><a href="#第二次国内革命战争" class="headerlink" title="第二次国内革命战争"></a>第二次国内革命战争</h3><ol>
-<li>南昌起义</li>
-<li>八七会议</li>
-<li>秋收起义</li>
-<li>三湾改编</li>
-<li>红军长征</li>
-<li>遵义会议</li>
-</ol>
-<h3 id="抗日战争"><a href="#抗日战争" class="headerlink" title="抗日战争"></a>抗日战争</h3><ol>
-<li>九一八事变</li>
-<li>西安事变</li>
-<li>七七事变</li>
-<li>百团大战</li>
-<li>党的第七次全国代表大会</li>
-<li>抗日战争的胜利</li>
-</ol>
-<h3 id="解放战争"><a href="#解放战争" class="headerlink" title="解放战争"></a>解放战争</h3><h2 id="中国近代史"><a href="#中国近代史" class="headerlink" title="中国近代史"></a>中国近代史</h2><h3 id="一、中华人民共和国的成立"><a href="#一、中华人民共和国的成立" class="headerlink" title="一、中华人民共和国的成立"></a>一、中华人民共和国的成立</h3><h3 id="二、新民主主义向社会主义过渡"><a href="#二、新民主主义向社会主义过渡" class="headerlink" title="二、新民主主义向社会主义过渡"></a>二、新民主主义向社会主义过渡</h3><ol>
-<li>过渡时期总路线</li>
-<li>社会主义制度的建立<ul>
-<li>社会主义的三大改造</li>
-<li>党的第八次全国代表大会</li>
-</ul>
-</li>
-</ol>
-<h3 id="三、改革开放与社会主义现代化建设新时期"><a href="#三、改革开放与社会主义现代化建设新时期" class="headerlink" title="三、改革开放与社会主义现代化建设新时期"></a>三、改革开放与社会主义现代化建设新时期</h3><ol>
-<li>拨乱反正 解放思想</li>
-<li>社会主义现代化建设新时期</li>
-</ol>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/09/06/%E5%8E%86%E5%8F%B2%E2%80%9D/" data-id="ckeqsurxd0000wcak3i4h8mrs" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-  
-    <a href="/2020/09/06/%E6%9A%97%E7%BD%91%E2%80%9C/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">暗网“</div>
-    </a>
-  
-</nav>
+{% block content %}
 
-  
-</article>
+  <div id="posts" class="posts-expand">
+    {{ post_template.render(page) }}
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a></li></ul>
+    <div class="post-spread">
+      {% if theme.jiathis %}
+        {% include '_partials/share/jiathis.swig' %}
+      {% elseif theme.baidushare %}
+        {% include '_partials/share/baidushare.swig' %}
+      {% elseif theme.add_this_id %}
+        {% include '_partials/share/add-this.swig' %}
+      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
+        {% include '_partials/share/duoshuo_share.swig' %}
+      {% endif %}
     </div>
   </div>
 
+{% endblock %}
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2020/09/06/%E5%8E%86%E5%8F%B2%E2%80%9D/">历史”</a>
-          </li>
-        
-          <li>
-            <a href="/2020/09/06/%E6%9A%97%E7%BD%91%E2%80%9C/">暗网“</a>
-          </li>
-        
-          <li>
-            <a href="/2020/09/06/test-my-site/">test_my_site</a>
-          </li>
-        
-          <li>
-            <a href="/2020/09/06/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+{% block sidebar %}
+  {{ sidebar_template.render(true) }}
+{% endblock %}
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-  </div>
-</body>
-</html>
+{% block script_extra %}
+  {% include '_scripts/pages/post-details.swig' %}
+{% endblock %}
